@@ -246,26 +246,25 @@
                         <div class="card cardContato" style="background-color: #fecc3b; font-weight: bold;">
                             <div class="card-header">Faça seu pedido!</div>
                             <div class="card-body" style="background-color: #fecc3b">
-                                <form action="/index.html" method="GET">
+                                <form action="index.html" method="GET">
                                 <div class="formStyle">
                                     <label for="nome">Nome</label>
-                                    <input type="text" placeholder="Digite seu nome" name="nome">
+                                    <input type="text" placeholder="Digite seu nome" id="nome">
                                 </div>
                                 <div class="formStyle">
                                     <label for="pedido">Pedido</label>
-                                    <input type="text" placeholder="Faça seu pedido" name="pedido">
+                                    <input type="text" placeholder="Faça seu pedido" id="pedido">
                                 </div>
                                 <div class="formStyle">
                                     <label for="endereco">Endereço</label>
-                                    <input type="text" placeholder="Rua ... , complemento" name="endereco">
+                                    <input type="text" placeholder="Rua ... , complemento" id="endereco">
                                 </div>
-                            </form>
+                            
                             </div>
                             <div class="card-footer bg-transparent">
-                                <button>
-                                <a href="https://wa.me/554299542190" target="_blank">Enviar pedido</a>
-                                </button>
+                                <button onclick="contact()">Enviar pedido</button>
                             </div>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -293,6 +292,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
